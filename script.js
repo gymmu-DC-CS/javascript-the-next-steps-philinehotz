@@ -33,6 +33,23 @@ export function exercise03(args) {
   return count
 }
 
+export function exercise04(args) {
+  const input = args
+  let result = []
+  let count = 0
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    if (currentElement === "") {
+      count = count + 1
+    }
+    {
+      count = count + 1
+    }
+  }
+  return count
+}
+
 /*between the curly brackets defines whats the function does*/
 /*result = endproduct*/
 /*computer starting counting at zero*/

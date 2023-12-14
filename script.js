@@ -35,19 +35,14 @@ export function exercise03(args) {
 
 export function exercise04(args) {
   const input = args
-  let result = []
-  let count = 0
-
+  const result = []
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    if (currentElement === "") {
-      count = count + 1
+    if (currentElement === "100000") {
+      let count = count + 1
     }
-    {
-      count = count + 1
-    }
+    return result.join("")
   }
-  return count
 }
 
 export function exercise05(args) {

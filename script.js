@@ -50,6 +50,31 @@ export function exercise04(args) {
   return count
 }
 
+export function exercise05(args) {
+  const input = args
+  const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i].charCodeAt()
+    if (currentElement >= 65 && currentElement <= 90) {
+      return true
+    }
+  }
+
+  return false
+}
+
+/* (14.12.23) export function exercise(args) {
+  const input = args
+  const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+  }
+
+  return result.join("") --> only for arrays 
+} --> basic settings*/
+
 /*between the curly brackets defines whats the function does*/
 /*result = endproduct*/
 /*computer starting counting at zero*/

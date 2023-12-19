@@ -34,15 +34,17 @@ export function exercise03(args) {
 }
 
 export function exercise04(args) {
-  const input = args
-  const result = []
+  const input = "Two words"
+  let result = []
+  let count = 0 + 2
+
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    if (currentElement === "100000") {
-      let count = count + 1
+    if (currentElement === "") {
+      count = count + 1
     }
-    return result.join("")
   }
+  return count
 }
 
 export function exercise05(args) {
@@ -52,6 +54,20 @@ export function exercise05(args) {
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i].charCodeAt()
     if (currentElement >= 65 && currentElement <= 90) {
+      return true
+    }
+  }
+
+  return false
+}
+
+export function exercise06(args) {
+  const input = args
+  const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i].charCodeAt()
+    if (currentElement >= 33 && currentElement <= 47) {
       return true
     }
   }

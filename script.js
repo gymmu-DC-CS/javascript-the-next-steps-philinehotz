@@ -59,6 +59,21 @@ export function exercise05(args) {
   return false
 }
 
+export function exercise08(args) {
+  const input = args
+  const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    if (currentElement === "e") {
+      result.push("3")
+    } else {
+      result.push(currentElement)
+    }
+  }
+  return result.join("")
+}
+
 /* (14.12.23) export function exercise(args) {
   const input = args
   const result = []
